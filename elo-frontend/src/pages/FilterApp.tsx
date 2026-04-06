@@ -127,7 +127,7 @@ export default function FilterApp() {
         body: JSON.stringify({
           title: sessionTitle,
           admin_password: adminPassword,
-          innovations: selectedOpps.map(o => ({ id: o.id, title: o.title, description: o.description })),
+          innovations: selectedOpps.map(o => ({ id: o.id, title: o.title, problem: o.problem, description: o.description })),
         }),
       });
       if (!res.ok) throw new Error(`${res.status}`);

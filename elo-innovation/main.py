@@ -63,6 +63,7 @@ def get_rater_or_404(token: str, db: DBSession) -> Rater:
 class InnovationItem(BaseModel):
     id: str
     title: str
+    problem: str = ""
     description: str = ""
 
 

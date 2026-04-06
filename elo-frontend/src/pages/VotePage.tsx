@@ -4,7 +4,7 @@ import { api } from "../lib/api";
 
 const STORAGE_KEY = "elo_rater_session";
 
-interface Innovation { id: string; title: string; description: string; }
+interface Innovation { id: string; title: string; problem: string; description: string; }
 interface Progress { total_pairs: number; completed_pairs: number; percent: number; is_complete: boolean; }
 type VoteState = "loading" | "voting" | "animating" | "complete" | "error";
 
@@ -43,11 +43,7 @@ export default function VotePage() {
     try {
       const voteRes = await api.submitVote(token, winner.id, loser.id);
       setProgress(voteRes.progress);
-      // Fetch next pair and run animation timer concurrently
-      const [nextRes] = await Promise.all([
-        api.getNextPair(token),
-        new Promise(resolve => setTimeout(resolve, 380)),
-      ]);
+      const nextRes = await api.getNextPair(token);
       setChosen(null);
       if (nextRes.complete) { setRankings(nextRes.rankings || []); setState("complete"); }
       else { setPairA(nextRes.innovation_a!); setPairB(nextRes.innovation_b!); setState("voting"); }
@@ -153,7 +149,7 @@ export default function VotePage() {
       {/* Cards */}
       <div style={{ flex: 1, display: "flex", alignItems: "flex-start", justifyContent: "center", padding: "32px 20px" }}>
         <div style={{ width: "100%", maxWidth: 560 }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: 14 }} className="fade-in">
+          <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {([["a", pairA!, pairB!], ["b", pairB!, pairA!]] as const).map(([side, item, other]) => {
               const isChosen = chosen === side;
               const isDimmed = chosen !== null && chosen !== side;
@@ -171,7 +167,7 @@ export default function VotePage() {
                     cursor: state === "voting" ? "pointer" : "default",
                     opacity: isDimmed ? 0.3 : 1,
                     transform: isChosen ? "scale(1.01)" : "scale(1)",
-                    transition: "all 200ms ease",
+                    transition: "none",
                     display: "flex", alignItems: "center", gap: 18,
                     boxShadow: isChosen ? "0 4px 20px rgba(26,58,92,0.2)" : "var(--shadow)",
                   }}
@@ -193,14 +189,19 @@ export default function VotePage() {
                     display: "flex", alignItems: "center", justifyContent: "center",
                     fontSize: 13, fontWeight: 800,
                     color: isChosen ? "white" : "var(--bg-navy)",
-                    transition: "all 200ms ease",
+                    transition: "none",
                   }}>
                     {side.toUpperCase()}
                   </div>
                   <div>
-                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 16, color: isChosen ? "white" : "var(--text)", lineHeight: 1.3, marginBottom: item?.description ? 4 : 0 }}>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 16, color: isChosen ? "white" : "var(--text)", lineHeight: 1.3, marginBottom: item?.problem || item?.description ? 4 : 0 }}>
                       {item?.title}
                     </div>
+                    {item?.problem && (
+                      <div style={{ fontSize: 12, color: isChosen ? "rgba(255,255,255,0.6)" : "var(--text-muted)", lineHeight: 1.45, marginBottom: item?.description ? 4 : 0, fontStyle: "italic" }}>
+                        {item.problem}
+                      </div>
+                    )}
                     {item?.description && (
                       <div style={{ fontSize: 13, color: isChosen ? "rgba(255,255,255,0.7)" : "var(--text-secondary)", lineHeight: 1.5 }}>
                         {item.description}

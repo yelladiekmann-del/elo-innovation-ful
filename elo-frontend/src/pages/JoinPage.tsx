@@ -15,15 +15,9 @@ export default function JoinPage() {
   const [params] = useSearchParams();
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      try {
-        const { token } = JSON.parse(stored);
-        if (token) navigate(`/vote/${token}`);
-      } catch {}
-    }
     const code = params.get("room");
     if (code) {
+      // Room link takes priority — always join the linked session, don't resume old token
       const cleaned = code.replace(/\s/g, "").toUpperCase();
       setRoomCode(cleaned);
       setLoading(true);
@@ -31,6 +25,15 @@ export default function JoinPage() {
         .then(info => { setRoomInfo(info); setStep("name"); })
         .catch((err: any) => { setError(err.message || "Sitzung nicht gefunden. Überprüfen Sie den Code und versuchen Sie es erneut."); })
         .finally(() => setLoading(false));
+      return;
+    }
+    // No room param — resume previous session from localStorage if available
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+      try {
+        const { token } = JSON.parse(stored);
+        if (token) navigate(`/vote/${token}`);
+      } catch {}
     }
   }, []);
 

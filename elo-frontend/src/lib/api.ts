@@ -14,7 +14,7 @@ async function request<T>(path: string, options?: RequestInit): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-export interface Innovation { id: string; title: string; description: string; }
+export interface Innovation { id: string; title: string; problem: string; description: string; }
 export interface Progress { total_pairs: number; completed_pairs: number; percent: number; is_complete: boolean; }
 export interface RankingItem { rank: number; id: string; title: string; description: string; rating: number; }
 export interface AggregateRankingItem { rank: number; id: string; title: string; description: string; mean_rating: number; std_dev: number; num_raters: number; }

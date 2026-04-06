@@ -1,795 +1,1584 @@
 [
   {
     "id": "1",
-    "title": "Erben als Neukunden: Proaktives Onboarding beim Vermögensübergang",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Digitaler Zugang zum Vermögen vor dem Vermögensübergang",
+    "problem": "Beim anstehenden Vermögensübergang trifft traditionelles Private Banking zu spät auf eine neue Investorengeneration.\nErben zwischen 25–45 Jahren haben andere Erwartungen: digital, selbstbestimmt, ETF- und impact-orientiert – werden aber häufig erst nach dem Vermögensübergang aktiv eingebunden.",
+    "description": "Aufbau eines früh akquirierenden Onboardingprogramms für Erben (25–45 Jahre), das mehrere Jahre vor dem eigentlichen Vermögensübergang ansetzt.\nIm Zentrum steht ein „Shared Workspace“ als Teil des geplanten Financial Lighthouse, der Erben frühzeitig einen Zugang zum bestehenden Vermögen ermöglicht. Durch Funktionen wie Dokumenten-Upload und Visualisierung komplexer Anlagen (z. B. Immobilien, Depots) werden Verständnis und erste Interaktion mit dem Vermögen aufgebaut – ohne bereits in aktive Investmententscheidungen einzugreifen.\nSo entsteht eine frühzeitige Beziehung zwischen Erben und Bank sowie ein gemeinsames Verständnis der Vermögensstruktur.\nNach dem Vermögensübergang dient diese Grundlage als Ausgangspunkt, um das Portfolio gezielt an die modernen Investment-Präferenzen der Erben (z. B. ETFs, Impact Investing, digitale Assets) weiterzuentwickeln.",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "2",
-    "title": "Mehrsprachiges Banking für internationale Fachkräfte im Rhein-Neckar-Cluster",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Internationale Fachkräfte & Studierende: Mehrsprachiges Banking mit Relocation- und Alltagsservices zur Migrationsunterstüzung bei Ämtern",
+    "problem": "Die Region zieht internationale Fachkräfte und Studierende an, während die Bank keine zugänglichen, mehrsprachigen Angebote bereitstellt und dadurch den Zugang zu einer einkommensstarken Zielgruppe verpasst. Bisher werden sie ausschließlich mit standardisierten Jugendangeboten wie der einfachBank adressiert.",
+    "description": "Englischsprachiges, volldigitales Leistungsangebot für ausländische Zuwanderer regionaler Konzerne (z.B.  BASF, SAP) und Studierende mit Digital-Onboarding, Relocation-Finanzierung und gezielten Partnerkooperationen mit regionalen Arbeitgebern.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Regionales Cashback: Regionale Cashback- und Treuekarte für den Alltagseinkauf",
+    "problem": "Zahlungsverkehr wird zum zentralen Interaktionspunkt, während die Bank dort keinen erlebbaren Mehrwert bietet und an Alltagsrelevanz verliert.",
+    "description": "Debit- oder Kreditkarte, die bei Bezahlung bei regionalen Partnern (Einzelhandel, Gastronomie) automatisch Rabatte, Cashback oder Treuepunkte vergibt",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "eSports-Eventhosting zur Ansprache junger Zielgruppen",
+    "problem": "Junge Zielgruppen bewegen sich in digitalen Ökosystemen außerhalb klassischer Bankkanäle, wodurch die Bank den Zugang zu zukünftigen Kundengenerationen verliert.",
+    "description": "Aufbau einer regionalen Gaming-Community (Discord/Turniere), bei der Banking-Vorteile (z.B. Loot-Rewards anstatt Cashback) an In-Game-Erfolge oder Event-Teilnahmen gekoppelt sind",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Hybrides Banking-Modell für Freelancer und Solo-Selbstständige mit individuellen Kreditlinien, Steuerrücklagen-Automatisierung sowie automatisierter Buchhaltung/Belegerfassung",
+    "problem": "Neue, nicht-lineare Einkommensmodelle passen nicht in klassische Banklogiken, wodurch wachsende Zielgruppen systematisch unterversorgt bleiben.",
+    "description": "Hybrides Banking-Modell für Solo-Selbstständige und Freelancer, das Finanz-Module wie Buchhaltung oder Steuerrücklagen-Automatisierung mit flexiblen Kreditlinien kombiniert",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "6",
-    "title": "Eingebettete Lieferkettenfinanzierung für KMU-Netzwerke",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Regionaler Membership-Club: Das Konto als Zugang zu einem exklusiven Ökosystem",
+    "problem": "Kunden erwarten zunehmend Mehrwert über klassische Bankprodukte hinaus, während die Bank primär funktionale Leistungen bietet und an Differenzierung verliert.",
+    "description": "Kontomodell, das als digitale Zutrittsberechtigung zu einem exklusiven regionalen Ökosystem fungiert. Es umfasst den prioritären Zugang zu lokalen Events (z. B. Ticket-Pre-Sales), die Nutzung von externen Co-Working-Spaces, den Besuch von Wine-Tastings sowie ein kuratiertes Partner-Programm mit Vorzugskonditionen",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Co-Working-Hub in Bankfilialen: Physischer Treffpunkt und Arbeitsplatz für Gründer, Freelancer und regionale Unternehmen",
+    "problem": "Die Bank verliert durch rückläufige Filialfrequenz und fehlende moderne Kontaktpunkte den Zugang zu genau diesen wachstumsstarken Zielgruppen, die häufig direkt zu Neobanken oder spezialisierten Plattformen abwandern.",
+    "description": "Umnutzung ausgewählter Filialflächen zu kuratierten Co-Working-Hubs für Freelancer, Gründer und kleine Unternehmen. Ziel ist nicht primär die Vermietung von Arbeitsplätzen, sondern der Aufbau eines physischen Zugangspunkts zu unternehmerischen Zielgruppen. Ergänzt durch regelmäßige Beratungsangebote, Events (z. B. Finanzierung, Gründung, Nachfolge) und direkte Anbindung an Firmenkundenberater entsteht ein integrierter Vertriebskanal innerhalb der Fläche.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "8",
-    "title": "Regionaler Cashback: Treuekarte für den Alltagseinkauf",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Baufinanzierung am Point-of-Decision: Integration in regionale PropTech-Plattformen",
+    "problem": "Immobilienentscheidungen werden zunehmend in digitalen Plattformen getroffen, während die Bank nicht Teil dieser Ökosysteme ist und den Kundenzugang verliert.",
+    "description": "Integration der Baufinanzierung in digitale Immobilien-Ökosysteme der Region (z. B. Hausverwalter-Tools). Die Einbindung erfolgt über digitale Schnittstellen direkt in den Prozessen für Kauf- oder Sanierungsentscheidungen. (Immobilieneigentümer wechseln zwischen der Planung im Verwalter-Tool und der externen Finanzierungssuche bei der Bank)",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "neutral" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "9",
-    "title": "eSports-Events zur Ansprache junger Zielgruppen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Vertikale Banking-Spezialisierung auf regionale Industrien: z.B. Gesundheitswesen, Agrarfinanzierung, Handwerkswesen (Gewerbe)",
+    "problem": "Hochspezialisierte Branchen haben spezifische Finanzierungsbedarfe, während die Bank diese nicht gezielt adressiert und dadurch an Relevanz in regionalen Schlüsselindustrien verliert.",
+    "description": "Radikaler Fokus auf branchenspezifisches Know-how bei Beratern für sehr lukrative regionale Nischen. Die Berater werden dadurch nicht als Generalisten sondern als Spezialisten wahrgenommen. Dadurch erhöht sich auch die Chence durch SEO oder GEO (Generative Engine Optimization) gefunden zu werden",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "neutral" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "10",
-    "title": "Hybrides Banking-Modell für Freelancer und Solo-Selbstständige",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Regionale Micro-Influencer als Markenbotschafter für Finanzthemen",
+    "problem": "Die VBK erreicht jüngere Zielgruppen kaum organisch - Finanzthemen werden auf Social Media überwiegend von externen Creators besetzt, ohne dass die Bank eine glaubwürdige, authentische Stimme in diesen Kanälen hat.",
+    "description": "Aufbau einer Ambassador-Strategie mit regionalen Micro-Influencern oder lokalen Z-Promis, die authentisch über ihre Erfahrungen mit der VBK berichten. Die Bank tritt bewusst in den Hintergrund - sichtbar ist der Ambassador, nicht das klassische Bankbranding. Ergänzend kann eine eigene Financial Literacy Academy (YouTube/Social) aufgebaut werden, die die VBK als Trusted Source bei Finanz- und Investmentthemen positioniert.",
     "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Die Bank als regionaler Netzwerk-Orchestrator: Unternehmer-Broker mit Matchmaking-Plattform",
+    "problem": "Regionale Unternehmen suchen Partner, Kunden oder Dienstleister häufig außerhalb der Region, obwohl passende Kontakte bereits im bestehenden Netzwerk vorhanden sind. Gleichzeitig nutzt die Bank ihr einzigartiges Wissen über ihre Firmenkunden nicht aktiv, wodurch ein zentraler Wettbewerbsvorteil ungenutzt bleibt.",
+    "description": "Aufbau eines zweistufigen Netzwerkmodells:\nKurzfristig agieren Berater als aktive „Unternehmer-Broker“, die auf Basis ihres Wissens gezielt Kunden miteinander vernetzen und Netzwerktreffen moderieren.\nMittelfristig wird dieses Modell durch eine strukturierte, ggf. digital unterstützte Matchmaking-Logik ergänzt, die das regionale Netzwerk skalierbar macht und systematisch Angebot und Nachfrage zusammenführt.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "12",
-    "title": "Regionaler Membership-Club: Das Konto als exklusives Ökosystem",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Öffentliche API-Sandbox: Entwicklerumgebung auf echter VBK-Bankinfrastruktur",
+    "problem": "Fintech-Startups testen Banking-Integrationen mit Stripe, Solaris oder ausländischen Banken weil die VBK keine Testumgebung anbietet und dadurch früh als Partner ausscheidet.",
+    "description": "Kostenlose, vollständig dokumentierte API-Sandbox, die echte VBK-Banking-Funktionen (Konten, Zahlungen, Webhooks, Kreditentscheidungen) in einer sicheren Testumgebung spiegelt. Startups können ihre Apps direkt gegen die Infrastruktur einer echten Regionalbank entwickeln mit realistischen Datenstrukturen.",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "neutral" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
-    ]
-  },
-  {
-    "id": "?a",
-    "title": "Co-Working-Hub in Bankfilialen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "13",
-    "title": "Baufinanzierung am Point-of-Decision: PropTech-Integration",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Regionaler Prepaid-Token: Günstiges Zahlungsmittel für Wochenmärkte und lokale Händler",
+    "problem": "Kleine Händler auf Wochenmärkten und in der Fußgängerzone verlieren Umsätze, weil viele Kunden kein Bargeld dabei haben  und gleichzeitig sind klassische Kartenzahlungen für Kleinsthändler mit hohen Gebühren verbunden. Eine einfache, günstige Lösung fehlt.",
+    "description": "Die VBK gibt eine aufladbare Prepaid-Karte heraus, die mit regionalen \"Tokens\" aufgeladen wird. Tokens sind keine 1:1-Entsprechung zum Euro, stattdessen erhalten Kunden beim Aufladen einen Bonus (z.B. 10€ einzahlen, 11 Token erhalten), was einen Kaufanreiz schafft. Händler, die die Karte akzeptieren, zahlen niedrigere Transaktionsgebühren als bei klassischen EC-Terminals. Akzeptanzstellen: Wochenmärkte, lokale Läden, Gastro, Veranstaltungen. Für Kunden: ein Zahlungsmittel mit echtem Mehrwert gegenüber Bargeld und Karte. Für Händler: günstigere Abwicklung und Kundenbindung an das regionale Netzwerk. Für die VBK: Float-Erträge auf aufgeladenen Guthaben, Transaktionsgebühren und tiefere Verankerung im regionalen Alltag.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "14",
-    "title": "Vertikale Branchen-Spezialisierung: Gesundheit, Agrar, Handwerk",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "KI-Betrugsschutz für Firmenkunden: Echtzeit-Erkennung von Deepfakes und Identitätsbetrug",
+    "problem": "Cyberangriffe und KI-basierte Betrugsformen nehmen zu, während Unternehmen keinen integrierten Schutz haben.",
+    "description": "Sicherheitslösung für Firmenkunden,die  Zahlungsanweisungen und Kommunikationsmuster mittels KI auf Deepfakes und Identitätsbetrug prüft",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "15",
-    "title": "Regionale Micro-Influencer als Markenbotschafter",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Banking direkt im ERP regionaler Firmen: Kredit- und Zahlungs-APIs integriert in KMU-Warenwirtschaft",
+    "problem": "Das KMU-Kreditgeschäft verlagert sich aus der Bank-Infrastruktur direkt an den „Point-of-Need“ in Warenwirtschafts- und ERP-Systeme",
+    "description": "Integration von Zahlungs- und Kredit-APIs der Volksbank direkt in ERP- und Warenwirtschaftssysteme von KMUs, sodass Finanzierungen und Transaktionen unmittelbar am „Point of Need“ ausgelöst werden können – z. B. bei Liquiditätsengpässen in der Lieferkette.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "neutral" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "16",
-    "title": "VBK als regionaler Netzwerk-Orchestrator: Unternehmer-Broker",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "17",
-    "title": "Öffentliche API-Sandbox auf echter VBK-Infrastruktur",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Lohnbuchhaltung als Bankservice: Betriebswirtschaftliche Entlastung für KMUs in der Rhein-Neckar-Umgebung",
+    "problem": "KMUs leiden unter administrativen Engpässen und suchen Dienstleister, die über reine Kreditvergabe hinausgehen",
+    "description": "Erweiterung des Dienstleistungsportfolios der Bank um betriebswirtschaftliche Funktionen wie Lohnbuchhaltung oder Personalmanagement, potenziell über Partner-Software",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "title": "KI-Belegverarbeitung: Automatische Verbuchung von Firmenbelegen direkt im ERP von regionalen Firmen",
+    "problem": "Manuelle Belegzuordnung und Spesenabrechnungen verursachen bei Unternehmen hohen administrativen Aufwand und binden wertvolle Zeit",
+    "description": "Bereitstellung einer KI-gestützten Schnittstelle zur automatisierten Belegverarbeitung. Die Bank fungiert als Enabler: Rechnungen und Spesenbelege werden durch KI-gestützte OCR-Verfahren erkannt, kategorisiert und in Echtzeit direkt mit den Kontobewegungen im ERP-System des Kunden (z. B. DATEV, SAP, Lexware) synchronisiert",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Lohn-on-Demand für Firmen im Einzugsgebiet: Flexibler Zugriff auf bereits verdiente Lohnanteile vor Monatsende",
+    "problem": "Firmenkunden suchen im \"War for Talents\" nach attraktiven Benefits, während Arbeitnehmer Flexibilität bei der Lohnverfügbarkeit fordern",
+    "description": "Die Bank bietet KMUs eine Funktion an, mit der deren Angestellte vor Monatsende flexibel auf bereits verdiente Lohnanteile zugreifen können",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "20",
-    "title": "Regionaler Prepaid-Token für Wochenmärkte und lokale Händler",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "KI-basierte Liquiditätsanalyse & Risikosubstitution durch Factoring",
+    "problem": "Viele Kleinunternehmen steuern ihre Liquidität reaktiv und erkennen finanzielle Engpässe erst, wenn sie bereits kritisch sind. Gleichzeitig verfügt die Bank über kontinuierliche Transaktions- und Kontodaten, nutzt diese aber nicht systematisch, um Kunden proaktiv zu unterstützen. Dadurch entstehen vermeidbare Kreditausfälle und verpasste Beratungsanlässe.",
+    "description": "Ein intelligentes Analyse-System, das Kontodaten und Zahlungsströme laufend scannt. Sobald sich ein Engpass abzeichnet (z. B. durch ausbleibende Zahlungen oder hohe Fixkosten), erhält der Berater einen direkten Hinweis im Banking Workspace. Anstatt reaktiv Konten zu sperren, kann er proaktiv Liquiditätslösungen wie Factoring (VR Factoring) anbieten, um das bankeigene Risiko zu reduzieren.",
+    "classifications": []
+  },
+  {
+    "id": "21",
+    "title": "B2C Financial Health Check – KI-gestützte Liquiditätsprognose mit proaktiven Anlageimpulsen",
+    "problem": "Kunden lassen signifikante Kapitalbeträge auf unverzinsten Konten liegen oder geraten unvorbereitet in Liquiditätsengpässe, da sie ihre finanzielle Entwicklung nicht aktiv planen. Die Bank agiert hierbei rein reaktiv und lässt wertvolle Ertragspotenziale im Anlagegeschäft sowie die Chance zur proaktiven Kundensteuerung ungenutzt.",
+    "description": "Einführung einer KI-basierten Analyse des Transaktionsverhaltens, die zukünftige Kontostände präzise prognostiziert. Das System erkennt frühzeitig Überschussliquidität oder drohende Unterdeckungen und wandelt diese Erkenntnisse automatisch in konkrete Handlungsempfehlungen um.",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "neutral" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "22",
-    "title": "KI-Betrugsschutz für Firmenkunden: Deepfake-Erkennung in Echtzeit",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Nutzungsbasierte Maschinenfinanzierung: Finanzierung nach Output statt Anlagenbesitz",
+    "problem": "Investitionen verlagern sich von Besitz zu Nutzung, während klassische Finanzierungsmodelle diese Entwicklung nicht abbilden.",
+    "description": "Finanzierungen für Maschinenbau-Produkte, die auf tatsächlicher Nutzung basieren (IoT-gesteuert). Die Bank finanziert nicht die Maschine, sondern den \"Output\" (z.B. Stückzahl).",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "23",
-    "title": "Banking direkt im ERP regionaler Firmen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Transparentes Loyalty-Programm: Kunden kennen ihren \"Status\" und wissen, wie sie aufsteigen",
+    "problem": "Kunden erleben keine sichtbaren Vorteile durch ihre Treue zur VBK - Statuszugehörigkeit und Upgrade-Pfade sind intransparent, während Wettbewerber mit attraktiven Loyalty- und Statussystemen Abwanderung begünstigen.",
+    "description": "Einführung eines differenzierten Status- und Incentive-Systems, bei dem Kunden ihren aktuellen Tier kennen, wissen wie sie aufsteigen können, und echte Vorteile erhalten (z.B. exklusive Statuskarte als regionales Symbol, Rabatte bei Partnern, priorisierter Service). Inspiriert von Konzepten wie Amex Platinum/Black - adaptiert auf die regionale Verankerung und Mitgliedschaftsidentität der VBK.",
     "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "24",
-    "title": "Dynamische Kreditvergabe (Data-Driven)",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Kleinstanteile an regionalen Projekten: Tokenisierte Investitionen für Privatkunden",
+    "problem": "Man will in die Region investieren aber lokale Projekte sind teuer",
+    "description": "Digitaler Erwerb von Kleinstanteilen an regionalen Sachwerten, Projekten oder Immobilien mittels Tokenisierung",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "title": "Finanzbildungs-App für Kinder: Taschengeld und Pflichten spielerisch mit Banking verknüpfen",
+    "problem": "Eltern sorgen sich um die finanzielle Bildung ihrer Kinder",
+    "description": "Eine interaktive App, die Taschengeld mit Haushaltspflichten verknüpft und finanzielle Kompetenz spielerisch belohnt",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "title": "Digitale Unterkonten und Multi-IBAN per Self-Service einrichten",
+    "problem": "Es kann sinnvoll sein mehrere IBANs in einem Konto anzulegen, ggf auch ausländische | Kunden vermissen die Möglichkeit, selbstständig und schnell digitale Unterkonten anzulegen, was bei Neobanken längst Standard ist",
+    "description": "Möglichkeit mehrere (auch ausl.) IBANs digital zu erstellen",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "title": "Krypto und tokenisierte Assets: Neue Anlageklassen",
+    "problem": "Progressive Erben und digital-affine Kunden interessieren sich für alternative Assetklassen - die VBK bietet jedoch keine entsprechenden Produkte an und verliert diese Zielgruppe an Neobroker und Krypto-Börsen.",
+    "description": "Konsequentes Angebot tokenisierter Assetklassen (Krypto-Verwahrung, digitale Wertpapiere) in der App. Ergänzt durch gezielte Schulung und Sensibilisierung des Vertriebs, damit Berater diese Kundengespräche selbstbewusst führen können.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "28",
-    "title": "Lohnbuchhaltung als Bankservice für KMUs",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Regional-Radar – Proaktive Kundenbegleitung bei lokalen Ereignissen durch eine Art \"Google Alert, Berater wissen was im Landkreis passiert und können Kundenpfelge betreiben",
+    "problem": "Eine Baustelle in der Fußgängerzone macht Läden monatelang faktisch unerreichbar; Umsätze brechen ein, aber die Bank reagiert nicht. Dabei weiß sie als erste über Umsatzrückgänge auf den Konten der betroffenen Händler Bescheid und könnte proaktiv handeln, bevor ein Liquiditätsproblem entsteht.",
+    "description": "Die VBK nutzt ihren einzigartigen Regionalvorteil: Berater kennen die Stadt, lesen die Lokalzeitung, sitzen im Stadtrat, wissen wann die Baustelle beginnt. Dieses Wissen wird systematisch in proaktive Kundenansprache übersetzt bevor der Händler in die Bredouille gerät. Berater werden trainiert und incentiviert, regionale Ereignisse frühzeitig mit betroffenen Kundensegmenten zu verknüpfen und aktiv Lösungen anzubieten (Kreditlinie, Stundung, Fördermittel).",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "29",
-    "title": "KI-Belegverarbeitung: Automatische Verbuchung im ERP",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Fördermittel-Scout: Automatische Recherche aller KfW-, Landes- und EU-Programme für KMU",
+    "problem": "Startups und KMU verpassen hohe Summen an Fördermitteln, weil die Recherche zu komplex ist und Informationen nicht zentralisiert",
+    "description": "Die VBK baut einen strukturierten Fördermittel-Service auf als Beratungsleistung: spezialisierte Berater mit aktuellem Wissen über EU-, Bundes-, Landes- und regionale Förderprogramme (KfW, BaWü, kommunale Töpfe). Kunden bekommen beim Erstgespräch automatisch eine Fördermittel-Analyse, und es gibt einen dedizierten Ansprechpartner, der aktiv informiert wenn neue Programme auflaufen. Optional: Kooperation mit lokalen Steuerberatern und IHK.",
     "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "30",
-    "title": "Lohn-on-Demand: Flexibler Zugriff auf verdiente Lohnanteile",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "KI-Impulsmanager für Neukunden: Datenbasierte Kontaktempfehlungen für den Vertrieb",
+    "problem": "Die VBK verfügt bereits über einen Impulsmanager für die Ansprache von Bestandskunden, jedoch nicht für die Neukundengewinnung. Berater erhalten derzeit keine konkreten, datenbasierten Hinweise darauf, wer wann und wie als potenzieller Neukunde kontaktiert werden sollte.",
+    "description": "Ein smartes System, was basierend auf lokalen Trends dem Berater konkret sagt, wer wann und wie als potenzieller Neukunde kontaktiert werden sollte. Das System lernt aus Feedback und ist in der Lage, regional spezifische Personas zu definieren.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "31",
-    "title": "KI-Frühwarnsystem für KMUs: Risikoerkennung via Cashflow-Muster",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Szenarioplanung-Tool: Auf der Webseite ein Tool zur Echtzeit-Modellierung komplexer Steuer- und Familienszenarien. Dient zur Lead-Generierung",
+    "problem": "Standard-Anlageprodukte wie ETFs sind zum austauschbaren Gut geworden; Kunden nutzen zunehmend eigene Tools. Die Bank verliert dadurch ihre Relevanz als strategischer Berater bei komplexen Fragestellungen (z. B. Erbschaft, Steueroptimierung, Vermögensübertrag), da einfache Rechner auf der Webseite diese Tiefe nicht abbilden",
+    "description": "Bereitstellung eines Simulations-Tools auf der Webseite. Kunden können komplexe Variablen (Familienstruktur, Immobilien, steuerliche Rahmenbedingungen) in Echtzeit modellieren und verschiedene Zukunftsszenarien dynamisch durchspielen. Das Tool fungiert als digitaler \"Sparringspartner\" und High-Value Lead-Magnet",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Lernender Vertriebssteuerungs-Copilot: Regionaler KI-Impulsmanager mit Feedback-Schleifen",
+    "problem": "Der momentan zur Verfügung gestellte Impulsmanager von TRuuco funktionert auf Basis einer festen Regelung. Es ist nicht regional spezifisch und lernt nicht aus Feedback.",
+    "description": "Eine verbesserte Version dieses Systems, das regional differenziert und aus Feedback lernt um die Bestandskunden besser zu adressieren.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "33",
-    "title": "Financial Health Check: KI-gestützte Vorsorgeanalyse",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "KI-Nachfolgefrühwarner: Automatische Erkennung von Erbsituationen im Kundenportfolio",
+    "problem": "Berater erkennen Erbschaftssituationen erst, wenn Vermögen bereits abgeflossen ist weil keine Frühwarnung existiert",
+    "description": "KI-Modell analysiert Privatkunden-Portfolio nach Nachfolge-Wahrscheinlichkeit: Alter des Kunden, Vermögen, Kontoentwicklung, fehlende Vollmachten. Generiert priorisierte Kontaktliste für Berater.",
     "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "neutral" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "title": "KI-gestützte Compliance-Automatisierung: Echtzeit-Transaktionsscreening und automatisierte Meldestrecken",
+    "problem": "Compliance-Prozesse (z. B. Geldwäscheprüfung, Fraud Monitoring, regulatorische Meldungen) sind stark manuell geprägt, verursachen hohe Kosten und binden qualifizierte Mitarbeiter in der Marktfolge. Gleichzeitig steigen regulatorische Anforderungen kontinuierlich, wodurch Prüfvolumen und Komplexität zunehmen. Bestehende regelbasierte Systeme erzeugen viele Fehlalarme (False Positives) und sind ineffizient.",
+    "description": "Einsatz von KI-Modellen zur automatisierten Analyse von Transaktionen in Echtzeit, um verdächtige Muster (z. B. Geldwäsche, Fraud) präziser zu erkennen und Fehlalarme zu reduzieren. Ergänzend automatisiert die Lösung die Erstellung aufsichtsrechtlicher Meldungen (z. B. Verdachtsmeldungen, Reports) auf Basis strukturierter Daten. Ziel ist eine deutliche Reduktion manueller Prüfaufwände, schnellere Reaktionszeiten und höhere Qualität in der Compliance.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "title": "Inkasso-as-a-Service: Aufbau eines regionalen Inkasso-Angebots für Firmenkunden",
+    "problem": "Viele kleine und mittlere Unternehmen haben keine professionellen Inkassoprozesse und greifen auf externe Anbieter zurück, die oft standardisiert und beziehungsfern agieren. Dadurch entstehen Forderungsausfälle und beschädigte Kundenbeziehungen. Gleichzeitig nutzt die Bank ihre Nähe zu Firmenkunden nicht, um in diesem Prozess eine Rolle zu spielen.",
+    "description": "Aufbau eines Inkasso-Services für Firmenkunden, bei dem die Bank offene Forderungen im Auftrag bearbeitet – datenbasiert, strukturiert und beziehungsorientiert. Ziel ist es, Rückflüsse zu erhöhen und gleichzeitig die Geschäftsbeziehungen der Firmenkunden zu schützen. Die Bank positioniert sich dabei als vertrauenswürdiger Partner für Forderungsmanagement im regionalen Mittelstand.",
+    "classifications": []
+  },
+  {
+    "id": "36",
+    "title": "Automatisierte 24h-Standardkreditvergabe via KI-Bilanzanalyse",
+    "problem": "Kreditentscheidungen im Firmenkundengeschäft dauern aufgrund manueller Prüfprozesse in der Marktfolge zu lange. Dies führt zu Wettbewerbsnachteilen und zum Verlust von Marktanteilen an schnellere Non- und Neobanken.",
+    "description": "Radikale Beschleunigung des bestehenden Kreditprozesses für Standard-Firmenkredite. Durch den Einsatz von KI zur automatisierten Extraktion und Analyse von Jahresabschlüssen und BWAs wird die Bonitätsprüfung vollständig digitalisiert.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "title": "Strategisches Initiativenportfolio: Weniger Projekte, mehr Fokus, harte Abbruchkriterien",
+    "problem": "Zu viele parallele Initiativen binden Ressourcen, wodurch strategisch relevante Projekte nicht konsequent umgesetzt werden.",
+    "description": "Aufbau einer konsequenten Governance für Initiativen (klare Business Owner, Ressourcenallokation, harte Abbruchkriterien) zur Reduktion paralleler Projekte",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "38",
-    "title": "Nutzungsbasierte Maschinenfinanzierung (Output-basiert, IoT)",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Partner Operating Model für Embedded Insurance: Versicherungen direkt im Kundenprozess integrieren",
+    "problem": "Versicherungen werden häufig losgelöst vom eigentlichen Bedarf abgeschlossen (z. B. separat, zu spät oder gar nicht). Dadurch gehen Cross-Selling-Potenziale verloren und Kunden nutzen externe Anbieter. Die Bank ist nicht im relevanten Moment präsent.",
+    "description": "Aufbau eines strukturierten Partner-Modells (z. B. mit R+V), bei dem Versicherungsprodukte direkt in bestehende Kundenprozesse integriert werden (z. B. Baufinanzierung → Gebäudeversicherung, Firmenkredit → Betriebshaftpflicht). Klare Verantwortlichkeiten, Schnittstellen und Incentives sorgen dafür, dass Partnerprodukte systematisch und skalierbar im Vertrieb verankert werden.",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "39",
-    "title": "Transparentes Loyalty-Programm mit echten Status-Tiers",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "KI-gestützter Berater-Copilot: Echtzeit-Kundendossier für Telefonat und Beratung",
+    "problem": "Berater starten viele Kundengespräche mit unvollständigem Kontext: Bei spontanen Anrufen müssen sie Kundendaten manuell zusammensuchen, in geplanten Terminen basieren Gespräche oft auf vorbereiteten Unterlagen und persönlichem Gedächtnis. Das kostet Zeit, wirkt unprofessionell und verhindert eine konsistente, proaktive Beratung. Gleichzeitig weichen Mitarbeitende mangels integrierter Lösungen auf private KI-Tools aus.",
+    "description": "Ein KI-gestützter Berater-Copilot bündelt Kundendaten in Echtzeit und stellt sie kanalübergreifend direkt im Gespräch bereit . Über die Integration von Telefonie, CRM und Kernbankensystem erscheint automatisch ein strukturiertes Kundendossier mit Kontostatus, letzten Interaktionen, offenen Aufgaben, relevanten Transaktionen und möglichen Beratungsthemen.",
     "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "neutral" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "title": "Interner KI-Wissensassistent: Alle Richtlinien und Rundschreiben per natürlicher Sprache abrufbar",
+    "problem": "Die große Menge an internen Informationsvolumen ist oft unstrukturiert und schwer zugänglich, sodass relevante Informationen nur mit hohem Suchaufwand gefunden werden.",
+    "description": "KI-gestützten Assistenzsystems (LLM), das alle internen Richtlinien, Verbund-Rundschreiben  in Echtzeit durchsuchbar macht. Mitarbeiter können in natürlicher Sprache Fragen stellen",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "41",
-    "title": "Kleinstanteile an regionalen Projekten: Tokenisierte Investitionen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Moderne Dateninfrastruktur: Funktionierendes Data Warehouse + bereinigtes CRM als technisches Fundament. .",
+    "problem": "Fragmentierte Datenlandschaften und isolierte Systeme verhindern eine ganzheitliche Sicht auf den Kunden, wodurch datenbasierte Steuerung und Skalierung von KI-Anwendungen nicht möglich sind.",
+    "description": "Aufbau eines zentralen, bereinigten Data Lakes („Single Point of Truth“) zur Auflösung interner Datensilos und Schaffung einer konsistenten, bankweiten Datenbasis. Ziel ist die technische Verfügbarkeit hochwertiger, integrierter Daten als Grundlage für präzise Vertriebssteuerung, Risikobewertung und zukünftige KI-Anwendungen.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "title": "Data Literacy: Verständnis für Datenpotenziale und Anwendungsfälle aufbauen",
+    "problem": "Fehlende Datenkompetenz in der Organisation verhindert die Nutzung vorhandener Daten, wodurch datenbasierte Entscheidungen im Vertrieb und Risiko kaum stattfinden.",
+    "description": "Systematischer Aufbau von Datenkompetenz (Data Literacy) in der Organisation, um Mitarbeitende in die Lage zu versetzen, Daten aktiv für Entscheidungen in Vertrieb und Risiko zu nutzen. Ziel ist die Verankerung datenbasierter Steuerung im Alltag und die effektive Nutzung der vorhandenen Dateninfrastruktur.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "title": "Initiativen-Governance: Klare Meilensteine, Hutträger und verbindliche Abbruchkriterien",
+    "problem": "Initiativen oder Arbeitsgruppen scheitern an unklaren Verantwortlichkeiten, fehlenden Abbruchkriterien und mangelnder Verbindlichkeit - strategisch wichtige Initiativen verzögern sich endlos oder konkurrieren unkoordiniert um dieselben Ressourcen.",
+    "description": "Einführung einer strikten Governance, die Meilensteine, klare Hutträger und harte Abbruchkriterien für alle internen Initiativen festlegt ähnlich wie es huete schon für Projekte existiert",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "44",
-    "title": "Analoger Rundum-sorglos-Service: Menschliche Begleitung beim Immobilienkauf",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Datenpflege als Vertriebsziel: CRM-Datenqualität durch variable Vergütung incentivieren",
+    "problem": "Der Vertrieb agiert stark abschlussgetrieben („Hauptsache das Feld ist voll“), wodurch die Qualität der CRM-Daten ruiniert wird",
+    "description": "Variable Vergütungen und Zielerreichungen der Berater werden zukünftig strikt an die Vollständigkeit und Sauberkeit der eingegebenen Kundendaten gekoppelt",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "45",
-    "title": "Finanzbildungs-App für Kinder: Taschengeld spielerisch verknüpfen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Eigene API Endpoints anbieten: Technologische Unabhängigkeit von Atruvia sichern",
+    "problem": "Die VBK ist in ihrer Innovations- und Integrationsfähigkeit stark von Atruvia abhängig, was die schnelle Anbindung moderner Drittanbieter verhindert und die Bank in ihrer digitalen Agilität einschränkt.",
+    "description": "Aufbau eines eigenen, API-fähigen \"Middleware-Layers\", der die Anbindung moderner Dritt-Software ermöglicht",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "neutral" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "46",
-    "title": "Digitale Unterkonten und Multi-IBAN per Self-Service",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "KI-Protokollassistent: Kundengespräche automatisch ins CRM transkribieren und strukturieren",
+    "problem": "Berater verbringen nach jedem Gespräch erhebliche Zeit mit manueller Protokollierung : Kapazitäten werden gebunden, Dokumentation bleibt fehleranfällig.",
+    "description": "KI transkribiert Kundengespräche mit Einwilligung in Echtzeit, legt strukturierte Protokolle im CRM an und hebt Follow-ups, Produkthinweise und Compliance-relevante Passagen automatisch hervor.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "title": "Gamifizierte Finanzbildung für das regionale Netzwerk: Lernpfade zu ETF, Aktien und Krypto mit direkter Produktfreischaltung",
+    "problem": "Kunden interessieren sich für ETFs, Crypto und alternative Assets, haben aber kein Grundwissen. Daher wandern sie zu Neobroker und Krypto-Börsen ab, weil die Bank keine Orientierung bietet.",
+    "description": "Bereitstellung einer gamifizierten Finanzbildungsplattform:strukturierte Lernpfade zu ETFs, Aktien, Crypto und Altersvorsorge. Wer einen Pfad abschließt, schaltet das passende Produkt direkt frei (ETF-Sparplan, Crypto-Zugang). Regulatorisch compliant.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "48",
-    "title": "Krypto und tokenisierte Assets direkt in der VBK-App",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "ESG-Projektfinanzierung: VBK als regionaler Partner für Energiewende und Gebäudesanierung",
+    "problem": "Große nachhaltige Infrastrukturprojekte in Deutschland (Energiewende, Mobilitätswende, Gebäudesanierung) suchen regionale Finanzierungspartner - die VBK adressiert dieses wachsende Segment bislang nicht systematisch.",
+    "description": "Aufbau eines spezialisierten Angebots für Projektfinanzierungen im Bereich nachhaltiger Transformation (z.B. Erneuerbare Energien, energetische Sanierungen, nachhaltige Mobilitätsinfrastruktur). Die VBK positioniert sich als regionaler ESG-Finanzierungspartner und nutzt Verbundstrukturen sowie staatliche Förderprogramme (KfW etc.) zur Risikoabsicherung.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "title": "Gebrandete KI für Kunden: Digitaler Finanzassistent als Premium-Benefit",
+    "problem": "Kunden nutzen zunehmend externe KI-Tools (z. B. ChatGPT) für Finanzfragen, ohne Zugriff auf ihre echten Bankdaten und ohne Einbindung der Bank. Dadurch verliert die Bank die Kundenschnittstelle und bleibt bei wichtigen Entscheidungsprozessen unsichtbar.",
+    "description": "Bereitstellung einer gebrandeten White-Label-KI-Lösung (auf Basis von ChatGPT Pro oder Gemini) für Kunden- entweder kostenfrei im Gegenzug für Datennutzungsrechte oder als Premium-Benefit.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "50",
-    "title": "Proaktive Krisenbegleitung mit Regionalwissen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Reverse Mentoring: Auszubildende coachen Führungskräfte in KI und digitalen Produkten",
+    "problem": "Führungskräfte der VBK haben oft geringe KI-Kompetenz und digitale Erfahrungswerte - während Auszubildende und jüngere Mitarbeitende dieses Wissen mitbringen, aber keine institutionelle Möglichkeit haben, es in die Organisation einzubringen.",
+    "description": "Strukturiertes Reverse-Mentoring-Programm, in dem Auszubildende und junge Mitarbeitende Führungskräfte regelmäßig in KI-Tools, digitalen Produkten und neuen Arbeitsweisen coachen. Schafft neben Wissensvermittlung auch kulturellen Wandel und stärkt das Zugehörigkeitsgefühl junger Talente in der Organisation.",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "51",
-    "title": "Fördermittel-Scout: Automatische Recherche für KMU",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Intrapreneurship-Programm: Mitarbeitende pitchen Geschäftsideen mit echtem Bankenbudget",
+    "problem": "Innovative Ideen aus der Belegschaft bleiben ungehört - es fehlt ein strukturierter Mechanismus, durch den Mitarbeitende Geschäftsideen einreichen, pitchen und mit echtem Support der Bank umsetzen können.",
+    "description": "Aufbau eines internen Innovationsprogramms: Mitarbeitende aller Ebenen können Geschäftsideen einreichen und in einem Pitch-Format präsentieren. Ein internes Gremium bewertet die Ideen und finanziert die vielversprechendsten mit dedizierter Zeit, Budget und Mentoring - ähnlich einem internen Startup-Accelerator.",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "52",
-    "title": "KI-Impulsmanager: Datenbasierte Kontaktempfehlungen für den Vertrieb",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Verbindliche Kanal-Policy: Alle Kommunikation auf einem Kanal für Struktur und Zugriff auf Informationen",
+    "problem": "Interne Kommunikation der VBK läuft über zahlreiche parallele Kanäle (E-Mail, Teams, WhatsApp, persönlich), wodurch Wissen fragmentiert bleibt, Entscheidungen undokumentiert sind und der Aufbau eines KI-gestützten Wissensassistenten unmöglich wird.",
+    "description": "Einführung einer verbindlichen Kommunikationshierarchie, die festlegt, welcher Kanal für welchen Zweck genutzt wird. Als strategischer Folgeeffekt ermöglicht die Zentralisierung den Aufbau eines KI-internen Wissensassistenten, der Protokolle, Entscheidungen und Dokumentation automatisch strukturiert und abrufbar macht.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "53",
-    "title": "KI-Szenarioplanung-Tool: Lead-Generator auf der Webseite",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "KI-Onboarding-Assistent: Neues Personal interaktiv und skalierbar in Systeme einführen",
+    "problem": "Onboarding neuer Mitarbeitender ist zeitaufwändig, inkonsistent und stark abhängig von der Verfügbarkeit erfahrener Kollegen - strukturierte und skalierbare Wissensvermittlung fehlt.",
+    "description": "KI-gestützter Onboarding-Assistent, der neue Mitarbeitende interaktiv durch interne Prozesse, Richtlinien und Systeme führt. Der Coach beantwortet Rückfragen, stellt Aufgaben und passt Lernpfade individuell an - verfügbar rund um die Uhr und konsistent für alle neuen Kollegen.",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "54",
-    "title": "Lernender Vertriebssteuerungs-Copilot mit Feedback-Schleifen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Breitflächige KI-Aktivierung: Datenschutzkonforme KI-Tools und Schulung für alle Mitarbeitenden",
+    "problem": "Das offizielle Angebot (Geno-GPT) wird kaum angenommen oder als mangelhaft und/oder beschränkt wahrgenommen, echte KI-Kompetenz bleibt derzeit noch auf einzelne KI-Manager beschränkt.",
+    "description": "Breitflächige KI-Aktivierungsinitiative für die gesamte Belegschaft: niedrigschwellige Schulungsformate, Bereitstellung datenschutzkonformer KI-Tools mit klaren Nutzungsregeln und Aufbau einer internen KI-Community of Practice. Ziel: KI wird zum normalen Arbeitsmittel für alle - nicht nur für Spezialisten.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "55",
-    "title": "KI-Nachfolgefrühwarner: Automatische Erkennung von Erbsituationen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "KI-Ready Finanzprofil-Export mit Prompt-Library für Bestandskunden",
+    "problem": "Kunden nutzen zunehmend KI-Tools wie ChatGPT oder Claude für Finanzfragen, müssen ihre Situation dabei aber jedes Mal manuell beschreiben - ohne strukturierte Datenbasis, fehleranfällig und ohne Bankkontext. Die Bank hat keine Kontrolle über diese Gespräche und ist unsichtbar, obwohl die Daten bei ihr liegen.",
+    "description": "Kunden können ihre aggregierten Finanzdaten auf eigenes Risiko als strukturierten One-Pager exportieren - ergänzt durch eine optimierte Prompt-Library, die ihnen erlaubt, ihre persönliche Finanzsituation sofort und sinnvoll in ChatGPT, Claude oder ähnliche Tools einzuspeisen. VBK definiert dabei das Format und bleibt als Datenquelle sichtbar. Langfristige Vision: direkte API-Konnektoren zu gängigen KI-Assistenten, sodass Kunden mit ihrem verifizierten Bankprofil als Kontext direkt im KI-Tool beraten werden.",
     "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "56",
-    "title": "KI-Beratungscockpit: Echtzeit-Kundendossier für jeden Termin",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Paket - Hub: Die Filiale als Logistikknoten",
+    "problem": "Die Filialfrequenz sinkt kontinuierlich, während gleichzeitig Paketvolumen durch E-Commerce stark wächst. Kunden benötigen flexible Abhol- und Rückgabepunkte, während die Bank ihre physische Infrastruktur nicht voll ausschöpft. Dadurch verliert die Filiale an Relevanz im Alltag der Kunden.",
+    "description": "Ausgewählte Filialen zu regionalen Logistik-Hubs durch Integration von Paketservices transformieren (z. B. Packstationen, Annahme- und Rückgabestellen) in Kooperation mit bestehenden Logistikanbietern. Ziel ist es, die Filiale als alltäglichen Kontaktpunkt zu etablieren und zusätzliche Frequenz zu erzeugen, die für Beratung und Cross-Selling genutzt werden kann. Je nach Standort kann das Angebot um Services für lokale Händler (z. B. Versandunterstützung) erweitert werden.",
     "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "left"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "neutral"
+      }
     ]
   },
   {
     "id": "57",
-    "title": "KI-Compliance: Echtzeit-Transaktionsscreening",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Strategischer Zwilling: Agent-basierte Entscheidungs-Simulation für Change & Product-Launch",
+    "problem": "Große strategische Entscheidungen (z. B. Filialschließungen, neue Gebührenmodelle oder IT-Migrationen) werden am grünen Tisch geplant. Die tatsächliche psychologische Reaktion der Belegschaft oder die Abwanderungsdynamik der Kunden wird erst sichtbar, wenn die Maßnahme bereits live ist. Dies führt zu teuren Kurskorrekturen, Reputationsverlust und „Change-Fatigue“ bei Mitarbeitenden.",
+    "description": "Der „Strategic Twin“ nutzt die MiroFish-Technologie, um ein digitales Abbild der Bank-Ökosystems zu schaffen.\nInterne Simulation: Tausende KI-Agenten erhalten die Profile und Rollen der Belegschaft. Vor der Verkündung einer neuen Strategie wird simuliert, wie Informationen durch die Abteilungen fließen, wo Widerstände entstehen und wie die Arbeitsmoral reagiert.\nCustomer Impact: Basierend auf echten (anonymisierten) Kundenstrukturen werden Reaktionen auf Preisänderungen oder digitale Features simuliert. Die Bank sieht vorab, welche Kundensegmente loyal bleiben und welche „kippen“.",
     "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "title": "Regio-Pulse AI: Persona-as-a-Service für den regionalen Mittelstand",
+    "problem": "Lokale Firmen (Einzelhandel, Handwerk, Dienstleister) im Einzugsgebiet der Bank stehen vor großen Unsicherheiten bei Innovationen, verfügen aber nicht über das Budget für klassische Marktforschungsinstitute. Gleichzeitig sitzt die Bank auf dem präzisesten demografischen und wirtschaftlichen Datensatz der Region, nutzt diesen aber bisher nur für die eigene Kreditrisikoprüfung statt als Wertschöpfungstool für ihre Firmenkunden.",
+    "description": "Die Bank bietet ihren Firmenkunden Zugang zu einer proprietären Simulationsplattform (powered by MiroFish).\nSynthetische Region: Die Bank stellt ein Modell der regionalen Bevölkerung als „digitale Testgruppe“ bereit. Diese Agenten repräsentieren einen exakten Querschnitt der regionalen Kaufkraft, Interessen und Verhaltensweisen.\nDer Service: Ein lokaler Bäcker oder ein Autohaus kann gegen Gebühr eine Simulation laufen lassen: „Wie reagiert die Region auf ein Abo-Modell für Brot?“ oder „Wie wirkt mein neues Marketing-Narrativ auf die Generation Z im Landkreis?“.",
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   },
   {
     "id": "59",
-    "title": "Differenzierte Mahnansprache ohne Schaden an Kundenbeziehung",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "title": "Begleitung durch Expertise: Menschliche Begleitung bei großen Lebensentscheidungen, z.B. beim Bau oder Kauf einer Immobilie",
+    "problem": "Bei großen, einmaligen Lebensentscheidungen haben Kunden Angst vor Fehlentscheidungen da sie selbst unter Umständen nicht über Erfahrung oder Expertise in gewissen Bereichen verfüfügen",
+    "description": "Bereitstellung einer punktuellen Begleitung, die den Kunden bei Themen wie dem Immobilienkauf unterstützen. Zum Beispiel durch Bauprüfer mit Expertise, regelmäßige Check-ins mit dem Kunden um ihm die Unsicherheit zu nehmen",
     "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "61",
-    "title": "Automatisierte 24h-Standardkreditvergabe via KI-Bilanzanalyse",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "64",
-    "title": "Strategisches Initiativenportfolio: Weniger Projekte, mehr Fokus",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "65",
-    "title": "Partner Operating Model für Embedded Insurance",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "neutral" }
-    ]
-  },
-  {
-    "id": "67",
-    "title": "KI-Berater-Copilot: Echtzeit-Datenaufbereitung für Telefonat und Beratung",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "68",
-    "title": "Interner KI-Wissensassistent für Richtlinien und Rundschreiben",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "69",
-    "title": "Moderne Dateninfrastruktur: Data Warehouse + bereinigtes CRM",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "70",
-    "title": "Data Literacy: Datenpotenziale und Anwendungsfälle aufbauen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "71",
-    "title": "Initiativen-Governance: Meilensteine, Hutträger, Abbruchkriterien",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "73",
-    "title": "Datenpflege als Vertriebsziel: CRM-Qualität durch Incentivierung",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "74",
-    "title": "Eigener API-Middleware-Layer: Technologische Unabhängigkeit von Atruvia",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "75",
-    "title": "KI-Protokollassistent: Gespräche automatisch ins CRM transkribieren",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "76",
-    "title": "Gamifizierte Finanzbildung mit direkter Produktfreischaltung",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "77",
-    "title": "ESG-Projektfinanzierung: Regionaler Partner für Energiewende",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
-    ]
-  },
-  {
-    "id": "78",
-    "title": "Gebrandete KI für Kunden: Digitaler Finanzassistent als Premium-Benefit",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "79",
-    "title": "Reverse Mentoring: Auszubildende coachen Führungskräfte",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "80",
-    "title": "Intrapreneurship-Programm: Mitarbeitende pitchen Geschäftsideen",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "81",
-    "title": "Verbindliche Kanal-Policy: Alle Kommunikation auf einem Kanal",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "82",
-    "title": "KI-Onboarding-Assistent für neues Personal",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "83",
-    "title": "Breitflächige KI-Aktivierung für alle Mitarbeitenden",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "85",
-    "title": "KI-Ready Finanzprofil-Export mit Prompt-Library",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "86",
-    "title": "VB Paket-Hub: Die Filiale als Logistikknoten",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "right" },
-      { "question_id": 2, "alignment": "left" },
-      { "question_id": 3, "alignment": "neutral" },
-      { "question_id": 4, "alignment": "left" },
-      { "question_id": 5, "alignment": "neutral" }
-    ]
-  },
-  {
-    "id": "87",
-    "title": "Strategischer Zwilling: Agent-basierte Entscheidungs-Simulation",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "neutral" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "neutral" },
-      { "question_id": 5, "alignment": "right" }
-    ]
-  },
-  {
-    "id": "88",
-    "title": "Regio-Pulse AI: Persona-as-a-Service für den regionalen Mittelstand",
-    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "classifications": [
-      { "question_id": 1, "alignment": "left" },
-      { "question_id": 2, "alignment": "right" },
-      { "question_id": 3, "alignment": "right" },
-      { "question_id": 4, "alignment": "right" },
-      { "question_id": 5, "alignment": "right" }
+      {
+        "question_id": 1,
+        "alignment": "right"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "right"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
     ]
   }
 ]

@@ -150,6 +150,14 @@ export default function VotePage() {
   const done = progress?.completed_pairs ?? 0;
   const canVote = state === "voting";
 
+  const splitContent = (item: Innovation | null) => {
+    if (!item) return { problem: "", description: "" };
+    const parts = item.description?.split("\n\n---\n\n");
+    return parts?.length === 2
+      ? { problem: parts[0], description: parts[1] }
+      : { problem: "", description: item.description ?? "" };
+  };
+
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
       {/* Top bar */}
@@ -177,7 +185,9 @@ export default function VotePage() {
       {/* Cards */}
       <div style={{ flex: 1, padding: "20px 16px 32px", overflowY: "auto" }}>
         <div style={{ width: "100%", maxWidth: 640, margin: "0 auto", display: "flex", flexDirection: "column", gap: 12 }}>
-          {([["a", pairA!, pairB!], ["b", pairB!, pairA!]] as const).map(([side, item, other]) => (
+          {([["a", pairA!, pairB!], ["b", pairB!, pairA!]] as const).map(([side, item, other]) => {
+            const { problem, description } = splitContent(item);
+            return (
             <button
               key={`${side}-${item?.id}`}
               onClick={() => item && other && handleVote(item, other)}
@@ -221,30 +231,31 @@ export default function VotePage() {
               </div>
 
               {/* Problem */}
-              {item?.problem && (
-                <div style={{ marginBottom: item?.description ? 12 : 0, paddingLeft: 38 }}>
+              {problem && (
+                <div style={{ marginBottom: description ? 12 : 0, paddingLeft: 38 }}>
                   <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.09em", color: "var(--text-muted)", marginBottom: 4 }}>
                     Problem
                   </div>
                   <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.6 }}>
-                    {item.problem}
+                    {problem}
                   </div>
                 </div>
               )}
 
               {/* Description */}
-              {item?.description && (
+              {description && (
                 <div style={{ paddingLeft: 38 }}>
                   <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.09em", color: "var(--text-muted)", marginBottom: 4 }}>
                     Ansatz
                   </div>
                   <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.6 }}>
-                    {item.description}
+                    {description}
                   </div>
                 </div>
               )}
             </button>
-          ))}
+          );
+          })}
 
           <p style={{ textAlign: "center", color: "var(--text-muted)", fontSize: 12, marginTop: 4 }}>
             Tippen Sie auf die Karte, die strategisch vielversprechender wirkt

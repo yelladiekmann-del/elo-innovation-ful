@@ -1,12 +1,10 @@
+import os
 from sqlmodel import SQLModel, create_engine, Session as DBSession
 
-DATABASE_URL = "sqlite:///./elo_innovation.db"
+DATABASE_URL = os.environ.get("DATABASE_URL", "sqlite:///./elo_innovation.db")
 
-engine = create_engine(
-    DATABASE_URL,
-    connect_args={"check_same_thread": False},
-    echo=False,
-)
+connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
+engine = create_engine(DATABASE_URL, connect_args=connect_args, echo=False)
 
 
 def create_db():

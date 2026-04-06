@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { api } from "../lib/api";
 
@@ -6,7 +6,7 @@ const STORAGE_KEY = "elo_rater_session";
 
 interface Innovation { id: string; title: string; problem: string; description: string; }
 interface Progress { total_pairs: number; completed_pairs: number; percent: number; is_complete: boolean; }
-type VoteState = "loading" | "voting" | "animating" | "complete" | "error";
+type VoteState = "loading" | "voting" | "submitting" | "complete" | "error";
 
 export default function VotePage() {
   const { token } = useParams<{ token: string }>();
@@ -16,9 +16,9 @@ export default function VotePage() {
   const [pairB, setPairB] = useState<Innovation | null>(null);
   const [progress, setProgress] = useState<Progress | null>(null);
   const [rankings, setRankings] = useState<any[]>([]);
-  const [chosen, setChosen] = useState<"a" | "b" | null>(null);
   const [error, setError] = useState("");
   const [raterName, setRaterName] = useState("");
+  const prefetchedRef = useRef<{ a: Innovation; b: Innovation } | null>(null);
 
   const loadNextPair = useCallback(async () => {
     if (!token) return;
@@ -37,16 +37,43 @@ export default function VotePage() {
     loadNextPair();
   }, [loadNextPair]);
 
-  const handleVote = async (winner: Innovation, loser: Innovation, side: "a" | "b") => {
+  // Prefetch the next pair in the background as soon as a pair is displayed
+  useEffect(() => {
     if (state !== "voting" || !token) return;
-    setChosen(side); setState("animating");
+    prefetchedRef.current = null;
+    api.getNextPair(token).then(res => {
+      if (!res.complete && res.innovation_a && res.innovation_b) {
+        prefetchedRef.current = { a: res.innovation_a, b: res.innovation_b };
+      }
+    }).catch(() => {});
+  }, [pairA?.id, pairB?.id]);
+
+  const handleVote = async (winner: Innovation, loser: Innovation) => {
+    if (state !== "voting" || !token) return;
+
+    // Show the prefetched pair immediately — no waiting
+    const prefetched = prefetchedRef.current;
+    prefetchedRef.current = null;
+    if (prefetched) {
+      setPairA(prefetched.a);
+      setPairB(prefetched.b);
+    }
+    setState("submitting");
+
     try {
       const voteRes = await api.submitVote(token, winner.id, loser.id);
       setProgress(voteRes.progress);
       const nextRes = await api.getNextPair(token);
-      setChosen(null);
-      if (nextRes.complete) { setRankings(nextRes.rankings || []); setState("complete"); }
-      else { setPairA(nextRes.innovation_a!); setPairB(nextRes.innovation_b!); setState("voting"); }
+
+      if (nextRes.complete) {
+        setRankings(nextRes.rankings || []);
+        setState("complete");
+      } else {
+        // Correct pair if prefetch differed (silent update, usually a no-op)
+        setPairA(nextRes.innovation_a!);
+        setPairB(nextRes.innovation_b!);
+        setState("voting");
+      }
     } catch (err: any) { setError(err.message || "Fehler beim Absenden."); setState("error"); }
   };
 
@@ -121,6 +148,7 @@ export default function VotePage() {
   const pct = progress?.percent ?? 0;
   const total = progress?.total_pairs ?? 1;
   const done = progress?.completed_pairs ?? 0;
+  const canVote = state === "voting";
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
@@ -137,83 +165,89 @@ export default function VotePage() {
       </div>
 
       {/* Question header */}
-      <div style={{ background: "var(--bg-navy)", padding: "32px 24px 36px", textAlign: "center" }}>
-        <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 8 }}>
+      <div style={{ background: "var(--bg-navy)", padding: "24px 24px 28px", textAlign: "center" }}>
+        <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 6 }}>
           Vergleich {done + 1} von {total}
         </p>
-        <h2 style={{ color: "white", fontSize: 20, fontFamily: "var(--font-display)", fontWeight: 700 }}>
-          Welche Opportunity ist interessanter?
+        <h2 style={{ color: "white", fontSize: 18, fontFamily: "var(--font-display)", fontWeight: 700 }}>
+          Welche Opportunity ist strategisch vielversprechender?
         </h2>
       </div>
 
       {/* Cards */}
-      <div style={{ flex: 1, display: "flex", alignItems: "flex-start", justifyContent: "center", padding: "32px 20px" }}>
-        <div style={{ width: "100%", maxWidth: 560 }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-            {([["a", pairA!, pairB!], ["b", pairB!, pairA!]] as const).map(([side, item, other]) => {
-              const isChosen = chosen === side;
-              const isDimmed = chosen !== null && chosen !== side;
-              return (
-                <button
-                  key={item?.id}
-                  onClick={() => item && other && handleVote(item, other, side)}
-                  disabled={state !== "voting"}
-                  style={{
-                    background: isChosen ? "var(--bg-navy)" : "white",
-                    border: `2px solid ${isChosen ? "var(--bg-navy)" : "var(--border)"}`,
-                    borderRadius: "var(--radius-lg)",
-                    padding: "22px 24px",
-                    textAlign: "left",
-                    cursor: state === "voting" ? "pointer" : "default",
-                    opacity: isDimmed ? 0.3 : 1,
-                    transform: isChosen ? "scale(1.01)" : "scale(1)",
-                    transition: "none",
-                    display: "flex", alignItems: "center", gap: 18,
-                    boxShadow: isChosen ? "0 4px 20px rgba(26,58,92,0.2)" : "var(--shadow)",
-                  }}
-                  onMouseEnter={e => {
-                    if (state !== "voting" || chosen) return;
-                    (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--bg-navy)";
-                    (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 20px rgba(26,58,92,0.12)";
-                  }}
-                  onMouseLeave={e => {
-                    if (state !== "voting" || isChosen) return;
-                    (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--border)";
-                    (e.currentTarget as HTMLButtonElement).style.boxShadow = "var(--shadow)";
-                  }}
-                >
-                  <div style={{
-                    width: 36, height: 36, borderRadius: "var(--radius)", flexShrink: 0,
-                    background: isChosen ? "rgba(255,255,255,0.15)" : "var(--bg-steel)",
-                    border: `1.5px solid ${isChosen ? "rgba(255,255,255,0.3)" : "var(--border)"}`,
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    fontSize: 13, fontWeight: 800,
-                    color: isChosen ? "white" : "var(--bg-navy)",
-                    transition: "none",
-                  }}>
-                    {side.toUpperCase()}
+      <div style={{ flex: 1, padding: "20px 16px 32px", overflowY: "auto" }}>
+        <div style={{ width: "100%", maxWidth: 640, margin: "0 auto", display: "flex", flexDirection: "column", gap: 12 }}>
+          {([["a", pairA!, pairB!], ["b", pairB!, pairA!]] as const).map(([side, item, other]) => (
+            <button
+              key={`${side}-${item?.id}`}
+              onClick={() => item && other && handleVote(item, other)}
+              disabled={!canVote}
+              style={{
+                background: "white",
+                border: "2px solid var(--border)",
+                borderRadius: "var(--radius-lg)",
+                padding: "20px 22px",
+                textAlign: "left",
+                cursor: canVote ? "pointer" : "default",
+                width: "100%",
+                transition: "none",
+                boxShadow: "var(--shadow)",
+                opacity: canVote ? 1 : 0.6,
+              }}
+              onMouseEnter={e => {
+                if (!canVote) return;
+                (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--bg-navy)";
+                (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 20px rgba(26,58,92,0.12)";
+              }}
+              onMouseLeave={e => {
+                if (!canVote) return;
+                (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--border)";
+                (e.currentTarget as HTMLButtonElement).style.boxShadow = "var(--shadow)";
+              }}
+            >
+              {/* Badge + Title */}
+              <div style={{ display: "flex", alignItems: "flex-start", gap: 12, marginBottom: 14 }}>
+                <div style={{
+                  width: 26, height: 26, borderRadius: "var(--radius)", flexShrink: 0, marginTop: 2,
+                  background: "var(--bg-steel)", border: "1.5px solid var(--border)",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontSize: 11, fontWeight: 800, color: "var(--bg-navy)",
+                }}>
+                  {side.toUpperCase()}
+                </div>
+                <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 16, color: "var(--text)", lineHeight: 1.35 }}>
+                  {item?.title}
+                </div>
+              </div>
+
+              {/* Problem */}
+              {item?.problem && (
+                <div style={{ marginBottom: item?.description ? 12 : 0, paddingLeft: 38 }}>
+                  <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.09em", color: "var(--text-muted)", marginBottom: 4 }}>
+                    Problem
                   </div>
-                  <div>
-                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 16, color: isChosen ? "white" : "var(--text)", lineHeight: 1.3, marginBottom: item?.problem || item?.description ? 4 : 0 }}>
-                      {item?.title}
-                    </div>
-                    {item?.problem && (
-                      <div style={{ fontSize: 12, color: isChosen ? "rgba(255,255,255,0.6)" : "var(--text-muted)", lineHeight: 1.45, marginBottom: item?.description ? 4 : 0, fontStyle: "italic" }}>
-                        {item.problem}
-                      </div>
-                    )}
-                    {item?.description && (
-                      <div style={{ fontSize: 13, color: isChosen ? "rgba(255,255,255,0.7)" : "var(--text-secondary)", lineHeight: 1.5 }}>
-                        {item.description}
-                      </div>
-                    )}
+                  <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.6 }}>
+                    {item.problem}
                   </div>
-                </button>
-              );
-            })}
-          </div>
-          <p style={{ textAlign: "center", color: "var(--text-muted)", fontSize: 12, marginTop: 24 }}>
-            {total - done} Vergleiche verbleibend · tippen Sie auf den, der strategisch vielversprechender wirkt
+                </div>
+              )}
+
+              {/* Description */}
+              {item?.description && (
+                <div style={{ paddingLeft: 38 }}>
+                  <div style={{ fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.09em", color: "var(--text-muted)", marginBottom: 4 }}>
+                    Ansatz
+                  </div>
+                  <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.6 }}>
+                    {item.description}
+                  </div>
+                </div>
+              )}
+            </button>
+          ))}
+
+          <p style={{ textAlign: "center", color: "var(--text-muted)", fontSize: 12, marginTop: 4 }}>
+            Tippen Sie auf die Karte, die strategisch vielversprechender wirkt
           </p>
         </div>
       </div>

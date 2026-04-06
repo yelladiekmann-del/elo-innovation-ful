@@ -1,0 +1,795 @@
+[
+  {
+    "id": "1",
+    "title": "Erben als Neukunden: Proaktives Onboarding beim Vermögensübergang",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Mehrsprachiges Banking für internationale Fachkräfte im Rhein-Neckar-Cluster",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Eingebettete Lieferkettenfinanzierung für KMU-Netzwerke",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Regionaler Cashback: Treuekarte für den Alltagseinkauf",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "neutral" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "9",
+    "title": "eSports-Events zur Ansprache junger Zielgruppen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "neutral" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Hybrides Banking-Modell für Freelancer und Solo-Selbstständige",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Regionaler Membership-Club: Das Konto als exklusives Ökosystem",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "neutral" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "?a",
+    "title": "Co-Working-Hub in Bankfilialen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Baufinanzierung am Point-of-Decision: PropTech-Integration",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Vertikale Branchen-Spezialisierung: Gesundheit, Agrar, Handwerk",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Regionale Micro-Influencer als Markenbotschafter",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "neutral" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "16",
+    "title": "VBK als regionaler Netzwerk-Orchestrator: Unternehmer-Broker",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Öffentliche API-Sandbox auf echter VBK-Infrastruktur",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Regionaler Prepaid-Token für Wochenmärkte und lokale Händler",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "neutral" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "22",
+    "title": "KI-Betrugsschutz für Firmenkunden: Deepfake-Erkennung in Echtzeit",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "23",
+    "title": "Banking direkt im ERP regionaler Firmen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Dynamische Kreditvergabe (Data-Driven)",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Lohnbuchhaltung als Bankservice für KMUs",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "29",
+    "title": "KI-Belegverarbeitung: Automatische Verbuchung im ERP",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Lohn-on-Demand: Flexibler Zugriff auf verdiente Lohnanteile",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "31",
+    "title": "KI-Frühwarnsystem für KMUs: Risikoerkennung via Cashflow-Muster",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "33",
+    "title": "Financial Health Check: KI-gestützte Vorsorgeanalyse",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "neutral" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "38",
+    "title": "Nutzungsbasierte Maschinenfinanzierung (Output-basiert, IoT)",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "39",
+    "title": "Transparentes Loyalty-Programm mit echten Status-Tiers",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "neutral" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "41",
+    "title": "Kleinstanteile an regionalen Projekten: Tokenisierte Investitionen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "44",
+    "title": "Analoger Rundum-sorglos-Service: Menschliche Begleitung beim Immobilienkauf",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "45",
+    "title": "Finanzbildungs-App für Kinder: Taschengeld spielerisch verknüpfen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "neutral" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "46",
+    "title": "Digitale Unterkonten und Multi-IBAN per Self-Service",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "48",
+    "title": "Krypto und tokenisierte Assets direkt in der VBK-App",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "50",
+    "title": "Proaktive Krisenbegleitung mit Regionalwissen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "51",
+    "title": "Fördermittel-Scout: Automatische Recherche für KMU",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "52",
+    "title": "KI-Impulsmanager: Datenbasierte Kontaktempfehlungen für den Vertrieb",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "53",
+    "title": "KI-Szenarioplanung-Tool: Lead-Generator auf der Webseite",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "54",
+    "title": "Lernender Vertriebssteuerungs-Copilot mit Feedback-Schleifen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "55",
+    "title": "KI-Nachfolgefrühwarner: Automatische Erkennung von Erbsituationen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "56",
+    "title": "KI-Beratungscockpit: Echtzeit-Kundendossier für jeden Termin",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "57",
+    "title": "KI-Compliance: Echtzeit-Transaktionsscreening",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "59",
+    "title": "Differenzierte Mahnansprache ohne Schaden an Kundenbeziehung",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "61",
+    "title": "Automatisierte 24h-Standardkreditvergabe via KI-Bilanzanalyse",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "64",
+    "title": "Strategisches Initiativenportfolio: Weniger Projekte, mehr Fokus",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "65",
+    "title": "Partner Operating Model für Embedded Insurance",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "67",
+    "title": "KI-Berater-Copilot: Echtzeit-Datenaufbereitung für Telefonat und Beratung",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "68",
+    "title": "Interner KI-Wissensassistent für Richtlinien und Rundschreiben",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "69",
+    "title": "Moderne Dateninfrastruktur: Data Warehouse + bereinigtes CRM",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "70",
+    "title": "Data Literacy: Datenpotenziale und Anwendungsfälle aufbauen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "71",
+    "title": "Initiativen-Governance: Meilensteine, Hutträger, Abbruchkriterien",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "73",
+    "title": "Datenpflege als Vertriebsziel: CRM-Qualität durch Incentivierung",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "74",
+    "title": "Eigener API-Middleware-Layer: Technologische Unabhängigkeit von Atruvia",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "75",
+    "title": "KI-Protokollassistent: Gespräche automatisch ins CRM transkribieren",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "76",
+    "title": "Gamifizierte Finanzbildung mit direkter Produktfreischaltung",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "77",
+    "title": "ESG-Projektfinanzierung: Regionaler Partner für Energiewende",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "78",
+    "title": "Gebrandete KI für Kunden: Digitaler Finanzassistent als Premium-Benefit",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "79",
+    "title": "Reverse Mentoring: Auszubildende coachen Führungskräfte",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "80",
+    "title": "Intrapreneurship-Programm: Mitarbeitende pitchen Geschäftsideen",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "81",
+    "title": "Verbindliche Kanal-Policy: Alle Kommunikation auf einem Kanal",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "82",
+    "title": "KI-Onboarding-Assistent für neues Personal",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "83",
+    "title": "Breitflächige KI-Aktivierung für alle Mitarbeitenden",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "85",
+    "title": "KI-Ready Finanzprofil-Export mit Prompt-Library",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "86",
+    "title": "VB Paket-Hub: Die Filiale als Logistikknoten",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "right" },
+      { "question_id": 2, "alignment": "left" },
+      { "question_id": 3, "alignment": "neutral" },
+      { "question_id": 4, "alignment": "left" },
+      { "question_id": 5, "alignment": "neutral" }
+    ]
+  },
+  {
+    "id": "87",
+    "title": "Strategischer Zwilling: Agent-basierte Entscheidungs-Simulation",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "neutral" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "neutral" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  },
+  {
+    "id": "88",
+    "title": "Regio-Pulse AI: Persona-as-a-Service für den regionalen Mittelstand",
+    "problem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "classifications": [
+      { "question_id": 1, "alignment": "left" },
+      { "question_id": 2, "alignment": "right" },
+      { "question_id": 3, "alignment": "right" },
+      { "question_id": 4, "alignment": "right" },
+      { "question_id": 5, "alignment": "right" }
+    ]
+  }
+]

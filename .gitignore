@@ -1,0 +1,15 @@
+.DS_Store
+
+# Frontend local/build artifacts
+elo-frontend/node_modules/
+elo-frontend/dist/
+elo-frontend/.env
+elo-frontend/.env.local
+elo-frontend/.env.*.local
+elo-frontend/.vercel/
+
+# Backend local artifacts
+elo-innovation/__pycache__/
+elo-innovation/*.db
+elo-innovation/.venv/
+elo-innovation/venv/

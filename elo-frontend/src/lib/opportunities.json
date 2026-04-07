@@ -508,7 +508,28 @@
     "title": "KI-basierte Liquiditätsanalyse & Risikosubstitution durch Factoring",
     "problem": "Viele Kleinunternehmen steuern ihre Liquidität reaktiv und erkennen finanzielle Engpässe erst, wenn sie bereits kritisch sind. Gleichzeitig verfügt die Bank über kontinuierliche Transaktions- und Kontodaten, nutzt diese aber nicht systematisch, um Kunden proaktiv zu unterstützen. Dadurch entstehen vermeidbare Kreditausfälle und verpasste Beratungsanlässe.",
     "description": "Ein intelligentes Analyse-System, das Kontodaten und Zahlungsströme laufend scannt. Sobald sich ein Engpass abzeichnet (z. B. durch ausbleibende Zahlungen oder hohe Fixkosten), erhält der Berater einen direkten Hinweis im Banking Workspace. Anstatt reaktiv Konten zu sperren, kann er proaktiv Liquiditätslösungen wie Factoring (VR Factoring) anbieten, um das bankeigene Risiko zu reduzieren.",
-    "classifications": []
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "right"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
   },
   {
     "id": "21",
@@ -907,7 +928,28 @@
     "title": "Inkasso-as-a-Service: Aufbau eines regionalen Inkasso-Angebots für Firmenkunden",
     "problem": "Viele kleine und mittlere Unternehmen haben keine professionellen Inkassoprozesse und greifen auf externe Anbieter zurück, die oft standardisiert und beziehungsfern agieren. Dadurch entstehen Forderungsausfälle und beschädigte Kundenbeziehungen. Gleichzeitig nutzt die Bank ihre Nähe zu Firmenkunden nicht, um in diesem Prozess eine Rolle zu spielen.",
     "description": "Aufbau eines Inkasso-Services für Firmenkunden, bei dem die Bank offene Forderungen im Auftrag bearbeitet – datenbasiert, strukturiert und beziehungsorientiert. Ziel ist es, Rückflüsse zu erhöhen und gleichzeitig die Geschäftsbeziehungen der Firmenkunden zu schützen. Die Bank positioniert sich dabei als vertrauenswürdiger Partner für Forderungsmanagement im regionalen Mittelstand.",
-    "classifications": []
+    "classifications": [
+      {
+        "question_id": 1,
+        "alignment": "left"
+      },
+      {
+        "question_id": 2,
+        "alignment": "right"
+      },
+      {
+        "question_id": 3,
+        "alignment": "neutral"
+      },
+      {
+        "question_id": 4,
+        "alignment": "left"
+      },
+      {
+        "question_id": 5,
+        "alignment": "right"
+      }
+    ]
   },
   {
     "id": "36",

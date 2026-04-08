@@ -6,3 +6,4 @@ elote>=1.1.0
 python-multipart>=0.0.9
 python-jose[cryptography]>=3.3.0
 python-chess>=1.999
+pyzstd>=0.15.9

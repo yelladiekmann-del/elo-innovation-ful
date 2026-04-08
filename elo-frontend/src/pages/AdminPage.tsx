@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
-import { api } from "../lib/api";
-
-const ADMIN_STORAGE_KEY = "elo_admin_session";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, ErrorBar } from "recharts";
+import { api, setAdminToken, clearAdminToken } from "../lib/api";
 
 type AdminView = "list" | "auth" | "dashboard";
 interface SessionListItem { room_code: string; title: string; innovation_count: number; created_at: string; is_active: boolean; }
 interface SessionDashboard { session_title: string; total_raters: number; raters_with_votes: number; aggregate_rankings: any[]; individual_rankings: any[]; }
-interface SessionInfo { room_code: string; title: string; innovation_count: number; raters: any[]; }
+interface SessionInfo { room_code: string; title: string; innovation_count: number; is_active: boolean; raters: any[]; }
 
 export default function AdminPage() {
   const [view, setView] = useState<AdminView>("list");
@@ -18,6 +16,7 @@ export default function AdminPage() {
   const [dashboard, setDashboard] = useState<SessionDashboard | null>(null);
   const [sessionInfo, setSessionInfo] = useState<SessionInfo | null>(null);
   const [activeTab, setActiveTab] = useState<"aggregate" | "individual" | "raters">("aggregate");
+  const [autoRefreshActive, setAutoRefreshActive] = useState(false);
 
   const [sessions, setSessions] = useState<SessionListItem[]>([]);
   const [sessionsLoading, setSessionsLoading] = useState(true);
@@ -33,20 +32,25 @@ export default function AdminPage() {
 
   useEffect(() => {
     fetchSessions();
-
-    // Try to restore previous admin session
-    const stored = localStorage.getItem(ADMIN_STORAGE_KEY);
-    if (!stored) return;
-    try {
-      const { roomCode: rc, password: pw } = JSON.parse(stored);
-      if (!rc || !pw) return;
-      setRoomCode(rc); setPassword(pw); setLoading(true);
-      Promise.all([api.getSessionInfo(rc, pw), api.getAggregateRankings(rc, pw)])
-        .then(([info, rankings]) => { setSessionInfo(info); setDashboard(rankings); setView("dashboard"); })
-        .catch(() => localStorage.removeItem(ADMIN_STORAGE_KEY))
-        .finally(() => setLoading(false));
-    } catch { localStorage.removeItem(ADMIN_STORAGE_KEY); }
   }, []);
+
+  // Auto-refresh every 30s when dashboard is open
+  useEffect(() => {
+    if (!autoRefreshActive || view !== "dashboard" || !roomCode) return;
+    const id = setInterval(async () => {
+      try {
+        const [info, rankings] = await Promise.all([
+          api.getSessionInfo(roomCode),
+          api.getAggregateRankings(roomCode),
+        ]);
+        setSessionInfo(info);
+        setDashboard(rankings);
+      } catch {
+        // Silently fail — don't disrupt the view
+      }
+    }, 30_000);
+    return () => clearInterval(id);
+  }, [autoRefreshActive, view, roomCode]);
 
   const handleSelectSession = (s: SessionListItem) => {
     setSelectedSession(s);
@@ -57,29 +61,49 @@ export default function AdminPage() {
   };
 
   const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault(); setError(""); setLoading(true);
+    e.preventDefault();
+    setError("");
+    setLoading(true);
     try {
-      const [info, rankings] = await Promise.all([api.getSessionInfo(roomCode, password), api.getAggregateRankings(roomCode, password)]);
-      setSessionInfo(info); setDashboard(rankings);
-      localStorage.setItem(ADMIN_STORAGE_KEY, JSON.stringify({ roomCode, password }));
+      const loginRes = await api.adminLogin(roomCode, password);
+      setAdminToken(roomCode, loginRes.token);
+      const [info, rankings] = await Promise.all([
+        api.getSessionInfo(roomCode),
+        api.getAggregateRankings(roomCode),
+      ]);
+      setSessionInfo(info);
+      setDashboard(rankings);
       setView("dashboard");
-    } catch (err: any) { setError(err.message || "Falsches Passwort."); }
-    finally { setLoading(false); }
+      setAutoRefreshActive(true);
+    } catch (err: any) {
+      setError(err.message || "Falsches Passwort.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleLogout = () => {
-    localStorage.removeItem(ADMIN_STORAGE_KEY);
-    setView("list"); setDashboard(null); setSessionInfo(null);
-    setRoomCode(""); setPassword(""); setSelectedSession(null);
+    if (roomCode) clearAdminToken(roomCode);
+    setAutoRefreshActive(false);
+    setView("list");
+    setDashboard(null);
+    setSessionInfo(null);
+    setRoomCode("");
+    setPassword("");
+    setSelectedSession(null);
     fetchSessions();
   };
 
   const refreshDashboard = async () => {
-    if (!roomCode || !password) return;
+    if (!roomCode) return;
     setLoading(true);
     try {
-      const [info, rankings] = await Promise.all([api.getSessionInfo(roomCode, password), api.getAggregateRankings(roomCode, password)]);
-      setSessionInfo(info); setDashboard(rankings);
+      const [info, rankings] = await Promise.all([
+        api.getSessionInfo(roomCode),
+        api.getAggregateRankings(roomCode),
+      ]);
+      setSessionInfo(info);
+      setDashboard(rankings);
     } catch {} finally { setLoading(false); }
   };
 
@@ -130,6 +154,7 @@ export default function AdminPage() {
                     padding: "16px 20px", textAlign: "left", cursor: "pointer",
                     display: "flex", alignItems: "center", gap: 16,
                     boxShadow: "var(--shadow)", transition: "all var(--transition)",
+                    opacity: s.is_active ? 1 : 0.6,
                   }}
                   onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--bg-navy)"; (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 16px rgba(26,58,92,0.12)"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "var(--border)"; (e.currentTarget as HTMLButtonElement).style.boxShadow = "var(--shadow)"; }}
@@ -148,6 +173,11 @@ export default function AdminPage() {
                       <span style={{ fontSize: 12, color: "var(--text-muted)" }}>
                         {new Date(s.created_at).toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" })}
                       </span>
+                      {!s.is_active && (
+                        <span style={{ fontSize: 11, fontWeight: 700, padding: "1px 8px", borderRadius: "var(--radius-pill)", background: "var(--bg-steel)", color: "var(--text-muted)", border: "1px solid var(--border)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+                          Inaktiv
+                        </span>
+                      )}
                     </div>
                   </div>
                   <span style={{ color: "var(--text-muted)", fontSize: 18, flexShrink: 0 }}>›</span>
@@ -222,11 +252,50 @@ export default function AdminPage() {
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <div style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 600, marginBottom: 6 }}>
             Raum {sessionInfo?.room_code}
+            {sessionInfo && !sessionInfo.is_active && (
+              <span style={{ marginLeft: 10, background: "rgba(255,255,255,0.12)", borderRadius: 4, padding: "1px 8px" }}>Inaktiv</span>
+            )}
           </div>
           <h1 style={{ color: "white", fontSize: 24, marginBottom: 6 }}>{dashboard?.session_title}</h1>
-          <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>
+          <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 13, marginBottom: 16 }}>
             {dashboard?.raters_with_votes} von {dashboard?.total_raters} Teilnehmern haben Stimmen eingereicht
           </p>
+          {/* Session action buttons */}
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            <button
+              className="btn-ghost-white"
+              style={{ fontSize: 12 }}
+              onClick={async () => {
+                if (!sessionInfo) return;
+                try {
+                  await api.patchSession(roomCode, !sessionInfo.is_active);
+                  await refreshDashboard();
+                } catch (err: any) { alert(err.message); }
+              }}
+            >
+              {sessionInfo?.is_active ? "⏸ Deaktivieren" : "▶ Aktivieren"}
+            </button>
+            <button
+              className="btn-ghost-white"
+              style={{ fontSize: 12 }}
+              onClick={() => api.exportCsv(roomCode).catch(err => alert(err.message))}
+            >
+              ↓ CSV exportieren
+            </button>
+            <button
+              className="btn-ghost-white"
+              style={{ fontSize: 12, color: "rgba(255,120,120,0.9)" }}
+              onClick={async () => {
+                if (!confirm(`Sitzung "${dashboard?.session_title}" wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.`)) return;
+                try {
+                  await api.deleteSession(roomCode);
+                  handleLogout();
+                } catch (err: any) { alert(err.message); }
+              }}
+            >
+              ✕ Sitzung löschen
+            </button>
+          </div>
         </div>
       </div>
 

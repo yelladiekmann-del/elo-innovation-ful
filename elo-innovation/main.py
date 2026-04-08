@@ -1,24 +1,32 @@
+import csv
 import hashlib
+import io
+import json
+import os
 import random
 import string
 import uuid
+from datetime import datetime, timedelta
 from typing import Optional
 
-from fastapi import FastAPI, Depends, HTTPException, status
+from fastapi import Depends, FastAPI, HTTPException, Security
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from jose import JWTError, jwt
 from pydantic import BaseModel
 from sqlmodel import Session as DBSession, select
 
 from database import create_db, get_db
-from models import Session, Rater, Comparison
+from models import Comparison, Rater, Session
 from elo_engine import (
-    recalculate_ratings,
-    get_next_pair,
-    completion_stats,
     aggregate_rankings,
+    completion_stats,
+    get_next_pair,
+    recalculate_ratings,
 )
 
-app = FastAPI(title="Innovation ELO Rating API", version="1.0.0")
+app = FastAPI(title="Innovation ELO Rating API", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -58,6 +66,35 @@ def get_rater_or_404(token: str, db: DBSession) -> Rater:
     return rater
 
 
+# ── JWT Auth ──────────────────────────────────────────────────────────────────
+
+JWT_SECRET = os.environ.get("JWT_SECRET", "dev-secret-change-in-prod")
+JWT_ALGORITHM = "HS256"
+_bearer = HTTPBearer(auto_error=False)
+
+
+def create_admin_token(room_code: str) -> str:
+    payload = {
+        "sub": room_code,
+        "exp": datetime.utcnow() + timedelta(hours=8),
+    }
+    return jwt.encode(payload, JWT_SECRET, algorithm=JWT_ALGORITHM)
+
+
+def verify_admin_token(
+    room_code: str,
+    credentials: Optional[HTTPAuthorizationCredentials],
+) -> None:
+    if credentials is None:
+        raise HTTPException(status_code=401, detail="Authorization header required")
+    try:
+        payload = jwt.decode(credentials.credentials, JWT_SECRET, algorithms=[JWT_ALGORITHM])
+    except JWTError:
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+    if payload.get("sub") != room_code:
+        raise HTTPException(status_code=403, detail="Token is for a different session")
+
+
 # ── Request / Response Schemas ────────────────────────────────────────────────
 
 class InnovationItem(BaseModel):
@@ -80,6 +117,21 @@ class CreateSessionResponse(BaseModel):
     message: str
 
 
+class AdminLoginRequest(BaseModel):
+    room_code: str
+    password: str
+
+
+class AdminLoginResponse(BaseModel):
+    token: str
+    room_code: str
+    title: str
+
+
+class PatchSessionRequest(BaseModel):
+    is_active: bool
+
+
 class JoinSessionRequest(BaseModel):
     name: str
 
@@ -97,18 +149,16 @@ class VoteRequest(BaseModel):
     loser_id: str
 
 
-class NextPairResponse(BaseModel):
-    innovation_a: dict
-    innovation_b: dict
-    progress: dict
+# ── Admin: Auth ───────────────────────────────────────────────────────────────
 
-
-class RankingItem(BaseModel):
-    rank: int
-    id: str
-    title: str
-    description: str
-    rating: float
+@app.post("/admin/login", response_model=AdminLoginResponse, tags=["Admin"])
+def admin_login(req: AdminLoginRequest, db: DBSession = Depends(get_db)):
+    """Validate admin password and return a JWT scoped to this session."""
+    session = get_session_or_404(req.room_code, db)
+    if session.admin_password != hash_password(req.password):
+        raise HTTPException(status_code=403, detail="Wrong admin password")
+    token = create_admin_token(req.room_code)
+    return AdminLoginResponse(token=token, room_code=req.room_code, title=session.title)
 
 
 # ── Admin: Session Management ─────────────────────────────────────────────────
@@ -119,7 +169,6 @@ def create_session(req: CreateSessionRequest, db: DBSession = Depends(get_db)):
     if len(req.innovations) < 2:
         raise HTTPException(status_code=400, detail="Need at least 2 innovations")
 
-    # Generate unique room code
     for _ in range(10):
         code = generate_room_code()
         existing = db.exec(select(Session).where(Session.room_code == code)).first()
@@ -128,7 +177,6 @@ def create_session(req: CreateSessionRequest, db: DBSession = Depends(get_db)):
     else:
         raise HTTPException(status_code=500, detail="Could not generate unique room code")
 
-    import json
     session = Session(
         title=req.title,
         room_code=code,
@@ -164,28 +212,23 @@ def list_sessions(db: DBSession = Depends(get_db)):
 
 
 @app.get("/sessions/{room_code}", tags=["Admin"])
-def get_session_info(room_code: str, admin_password: str, db: DBSession = Depends(get_db)):
-    """Get session details + all raters + completion stats. Requires admin password."""
+def get_session_info(
+    room_code: str,
+    credentials: Optional[HTTPAuthorizationCredentials] = Security(_bearer),
+    db: DBSession = Depends(get_db),
+):
+    """Get session details + all raters + completion stats. Requires admin JWT."""
+    verify_admin_token(room_code, credentials)
     session = get_session_or_404(room_code, db)
-    if session.admin_password != hash_password(admin_password):
-        raise HTTPException(status_code=403, detail="Wrong admin password")
 
     raters = db.exec(select(Rater).where(Rater.session_id == session.id)).all()
     innovations = session.get_innovations()
 
     rater_stats = []
     for rater in raters:
-        comps = db.exec(
-            select(Comparison)
-            .where(Comparison.rater_id == rater.id)
-        ).all()
+        comps = db.exec(select(Comparison).where(Comparison.rater_id == rater.id)).all()
         stats = completion_stats(innovations, comps)
-        rater_stats.append({
-            "id": rater.id,
-            "name": rater.name,
-            "joined_at": rater.joined_at,
-            **stats,
-        })
+        rater_stats.append({"id": rater.id, "name": rater.name, "joined_at": rater.joined_at, **stats})
 
     return {
         "room_code": session.room_code,
@@ -198,12 +241,54 @@ def get_session_info(room_code: str, admin_password: str, db: DBSession = Depend
     }
 
 
-@app.get("/sessions/{room_code}/rankings", tags=["Admin"])
-def get_aggregate_rankings(room_code: str, admin_password: str, db: DBSession = Depends(get_db)):
-    """Get aggregate rankings across all raters. Requires admin password."""
+@app.patch("/sessions/{room_code}", tags=["Admin"])
+def patch_session(
+    room_code: str,
+    req: PatchSessionRequest,
+    credentials: Optional[HTTPAuthorizationCredentials] = Security(_bearer),
+    db: DBSession = Depends(get_db),
+):
+    """Toggle a session's active state. Requires admin JWT."""
+    verify_admin_token(room_code, credentials)
     session = get_session_or_404(room_code, db)
-    if session.admin_password != hash_password(admin_password):
-        raise HTTPException(status_code=403, detail="Wrong admin password")
+    session.is_active = req.is_active
+    db.add(session)
+    db.commit()
+    db.refresh(session)
+    return {"room_code": session.room_code, "is_active": session.is_active}
+
+
+@app.delete("/sessions/{room_code}", tags=["Admin"])
+def delete_session(
+    room_code: str,
+    credentials: Optional[HTTPAuthorizationCredentials] = Security(_bearer),
+    db: DBSession = Depends(get_db),
+):
+    """Delete a session and all its data. Requires admin JWT."""
+    verify_admin_token(room_code, credentials)
+    session = get_session_or_404(room_code, db)
+
+    # Delete children in FK-safe order: Comparisons → Raters → Session
+    raters = db.exec(select(Rater).where(Rater.session_id == session.id)).all()
+    for rater in raters:
+        comparisons = db.exec(select(Comparison).where(Comparison.rater_id == rater.id)).all()
+        for comp in comparisons:
+            db.delete(comp)
+        db.delete(rater)
+    db.delete(session)
+    db.commit()
+    return {"deleted": room_code}
+
+
+@app.get("/sessions/{room_code}/rankings", tags=["Admin"])
+def get_aggregate_rankings(
+    room_code: str,
+    credentials: Optional[HTTPAuthorizationCredentials] = Security(_bearer),
+    db: DBSession = Depends(get_db),
+):
+    """Get aggregate rankings across all raters. Requires admin JWT."""
+    verify_admin_token(room_code, credentials)
+    session = get_session_or_404(room_code, db)
 
     innovations = session.get_innovations()
     raters = db.exec(select(Rater).where(Rater.session_id == session.id)).all()
@@ -224,15 +309,70 @@ def get_aggregate_rankings(room_code: str, admin_password: str, db: DBSession = 
                 ],
             })
 
-    aggregate = aggregate_rankings(innovations, all_ratings)
+    agg = aggregate_rankings(innovations, all_ratings)
 
     return {
         "session_title": session.title,
         "total_raters": len(raters),
         "raters_with_votes": len(all_ratings),
-        "aggregate_rankings": aggregate,
+        "aggregate_rankings": agg,
         "individual_rankings": rater_breakdowns,
     }
+
+
+@app.get("/sessions/{room_code}/export", tags=["Admin"])
+def export_session_csv(
+    room_code: str,
+    credentials: Optional[HTTPAuthorizationCredentials] = Security(_bearer),
+    db: DBSession = Depends(get_db),
+):
+    """Export rankings as a CSV file. Requires admin JWT."""
+    verify_admin_token(room_code, credentials)
+    session = get_session_or_404(room_code, db)
+
+    innovations = session.get_innovations()
+    raters = db.exec(select(Rater).where(Rater.session_id == session.id)).all()
+
+    # Build per-rater ratings maps
+    rater_ratings: dict[str, dict[str, float]] = {}
+    all_ratings = []
+    for rater in raters:
+        comps = db.exec(select(Comparison).where(Comparison.rater_id == rater.id)).all()
+        if comps:
+            r = recalculate_ratings(innovations, comps)
+            rater_ratings[rater.name] = r
+            all_ratings.append(r)
+        else:
+            rater_ratings[rater.name] = {}
+
+    agg = aggregate_rankings(innovations, all_ratings)
+    rater_names = [r.name for r in raters]
+
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(["rank", "id", "title", "description", "mean_rating", "std_dev", "num_raters"] + rater_names)
+
+    for item in agg:
+        row = [
+            item["rank"],
+            item["id"],
+            item["title"],
+            item.get("description", ""),
+            item["mean_rating"],
+            item["std_dev"],
+            item["num_raters"],
+        ]
+        for name in rater_names:
+            personal = rater_ratings.get(name, {})
+            row.append(round(personal.get(item["id"], 1000), 1) if personal else "")
+        writer.writerow(row)
+
+    output.seek(0)
+    return StreamingResponse(
+        iter([output.getvalue()]),
+        media_type="text/csv; charset=utf-8",
+        headers={"Content-Disposition": f'attachment; filename="rankings_{room_code}.csv"'},
+    )
 
 
 # ── Rater: Join & Vote ────────────────────────────────────────────────────────
@@ -261,7 +401,6 @@ def join_session(room_code: str, req: JoinSessionRequest, db: DBSession = Depend
     if not name:
         raise HTTPException(status_code=400, detail="Name cannot be empty")
 
-    # Check if name already taken in this session
     existing = db.exec(
         select(Rater).where(Rater.session_id == session.id, Rater.name == name)
     ).first()
@@ -291,10 +430,7 @@ def get_next_comparison(token: str, db: DBSession = Depends(get_db)):
     session = db.get(Session, rater.session_id)
     innovations = session.get_innovations()
 
-    comparisons = db.exec(
-        select(Comparison).where(Comparison.rater_id == rater.id)
-    ).all()
-
+    comparisons = db.exec(select(Comparison).where(Comparison.rater_id == rater.id)).all()
     ratings = recalculate_ratings(innovations, comparisons)
     pair = get_next_pair(innovations, comparisons, ratings)
     progress = completion_stats(innovations, comparisons)
@@ -331,7 +467,6 @@ def submit_vote(req: VoteRequest, db: DBSession = Depends(get_db)):
     if req.winner_id == req.loser_id:
         raise HTTPException(status_code=400, detail="Winner and loser must be different")
 
-    # Prevent duplicate votes for the same pair
     existing = db.exec(
         select(Comparison).where(
             Comparison.rater_id == rater.id,

@@ -1,0 +1,4 @@
+[deploy]
+healthcheckPath = "/docs"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
